@@ -163,18 +163,18 @@ class AudioGenerator():
                 self.cur_test_index = 0
             yield ret
 
-    def load_train_data(self, desc_file='train_corpus.json'):
+    def load_train_data(self, desc_file='datasets/train_corpus.json'):
         self.load_metadata_from_desc_file(desc_file, 'train')
         self.fit_train()
         if self.sort_by_duration:
             self.sort_data_by_duration('train')
 
-    def load_validation_data(self, desc_file='valid_corpus.json'):
+    def load_validation_data(self, desc_file='datasets/valid_corpus.json'):
         self.load_metadata_from_desc_file(desc_file, 'validation')
         if self.sort_by_duration:
             self.sort_data_by_duration('valid')
 
-    def load_test_data(self, desc_file='test_corpus.json'):
+    def load_test_data(self, desc_file='datasets/test_corpus.json'):
         self.load_metadata_from_desc_file(desc_file, 'test')
     
     def load_metadata_from_desc_file(self, desc_file, partition):
