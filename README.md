@@ -2,7 +2,9 @@
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project is modified from the third project (VUI Speech Recognizer) of [Udacity's Natural Language Processing Nanodegree](https://www.udacity.com/course/natural-language-processing-nanodegree--nd892), which is a good introduction to do speech recognition with deep recurrent neural networks using `keras`. The dataset is the subset of [LibriSpeech](http://www.danielpovey.com/files/2015_icassp_librispeech.pdf).
+This project is modified from my third project (VUI Speech Recognizer) of [Udacity's Natural Language Processing Nanodegree](https://www.udacity.com/course/natural-language-processing-nanodegree--nd892), which is a good introduction to do speech recognition with deep recurrent neural networks using `keras`.
+
+I begin by investigating the [LibriSpeech](http://www.danielpovey.com/files/2015_icassp_librispeech.pdf) that will be used to train and evaluate my models. My algorithm first convert any raw audio to feature representations that are commonly used for ASR (automatic speech recognition). I then move on to build neural networks that can map these audio features to transcribed text. After learning about the basic types of layers that are often used for deep learning-based approaches to ASR, I engage in my own investigations by creating and testing my own state-of-the-art models.
 
 ## Requirements
 * Python3
